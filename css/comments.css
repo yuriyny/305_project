@@ -1,0 +1,24 @@
+#DIV_COMMENTS {
+    width: 667px;
+    margin: auto;
+    background: rgb(238, 238, 238) none repeat scroll 0% 0% / auto padding-box border-box;
+    font: normal normal 400 normal 13px / normal Verdana, Arial, sans-serif;
+
+}
+#DIV_COMMENTS {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#DIV_SUBMIT {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    height: 150px;
+    border: 1px solid #d5d3d3;
+    font-size: 14px;
+    padding-right: 20px
+
+}
