@@ -31,7 +31,7 @@
 	
 	function find_movies_by_genre($genre){
 		global $db; 
-		$sql = "select movieName, avg(rating) from israted where movieGenre='".$genre."' group by(movieName) order by(avg(rating)) asc;"
+		$sql = "select movieName, avg(rating) from israted where movieGenre='".$genre."' group by(movieName) order by(avg(rating)) desc;"
 		$result = db_query($db, $sql);
 		return $result; 
 	}

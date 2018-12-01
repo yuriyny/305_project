@@ -22,7 +22,7 @@
 	
 	function confirm_query($result_set) {
 		if(!$result_set) {
-		  exit("Database query failed.");
+		  $result_set = array();
 		}
 	}
 	
