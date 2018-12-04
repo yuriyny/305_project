@@ -54,6 +54,33 @@
 		});
 	</script>
 	<!-- start-smoth-scrolling -->
+	<style>
+		.star1{
+			
+			float: left; 
+			font-size: 15px;
+		}
+		.star2{
+			
+			float: left; 
+			font-size: 15px;
+		}
+		.star3{
+			float: left; 
+			font-size: 15px;
+		}
+		.star4{ 
+			float: left; 
+			font-size: 15px;
+		}
+		.star5{ 
+			float: left; 
+			font-size: 15px;
+		}
+		.hoveredStar {
+			color: yellow; 
+		}
+	</style>
 </head>
 
 <body>
@@ -262,6 +289,7 @@
 			<tbody id="TBODY_29">
 				<?php 
 					$result = rank_all_movies();
+					$movie_names = array(); 
 					while($nresult=db_fetch_assoc($result)){
 						echo '
 							<tr id="TR_69">
@@ -271,10 +299,9 @@
 							<td id="TD_78">
 								 <a href="movieinfo.html" title="Scott Grimes, Damian Lewis" id="A_79">'.$nresult["movieName"].'</a> 
 							</td>
-							<td id="TD_81">
-								<strong id="STRONG_82">'.$nresult["AVG(rating)"].'</strong>
+							<td id="TD_82">
+								<a href="rate_action1.php?name='.$nresult["movieName"].'&value=1><div class="star1">&#9734</div></a><a href="rate_action1.php?name='.$nresult["movieName"].'&value=2><div class="star2">&#9734</div></a><a href="rate_action1.php?name='.$nresult["movieName"].'&value=3><div class="star3">&#9734</div></a><a href="rate_action1.php?name='.$nresult["movieName"].'&value=4><div class="star4">&#9734</div></a><a href="rate_action1.php?name='.$nresult["movieName"].'&value=5><div class="star5">&#9734</div></a>
 							</td>
-
 							<td id="TD_105">
 								<div id="DIV_106">
 									<div id="DIV_107">
@@ -282,6 +309,7 @@
 								</div>
 							</td>
 						</tr>';
+						array_push($movie_names, $nresult["movieName"]); //add movie name to array
 					}
 					db_free_result($result);
 					db_close($db);
@@ -311,7 +339,73 @@
 					$('.dropdown-menu', this).stop( true, true ).slideUp("fast");
 					$(this).toggleClass('open');       
 				}
-				);
+			);
+			);
+			$(".star1").click(function() {
+					var s = ""
+				}
+			);
+			$(".star1").hover(
+				function() {
+					$(this).addClass("hoveredStar");
+				},
+				function(){
+					$(this).removeClass("hoveredStar");
+				}
+			);
+			$(".star2").hover(
+				function() {
+					$(this).closest(".star1").addClass("hoveredStar");
+					$(this).addClass("hoveredStar");
+				},
+				function(){
+					$(this).closest(".star1").removeClass("hoveredStar");
+					$(this).removeClass("hoveredStar");
+				}
+			);
+			$(".star3").hover(
+				function() {
+					$(this).closest(".star1").addClass("hoveredStar");
+					$(this).closest(".star2").addClass("hoveredStar");
+					$(this).addClass("hoveredStar");
+				},
+				function(){
+					$(this).closest(".star1").removeClass("hoveredStar");
+					$(this).closest(".star2").removeClass("hoveredStar");
+					$(this).removeClass("hoveredStar");
+				}
+			);
+			$(".star4").hover(
+				function() {
+					$(this).closest(".star1").addClass("hoveredStar");
+					$(this).closest(".star2").addClass("hoveredStar");
+					$(this).closest(".star3").addClass("hoveredStar");
+					$(this).addClass("hoveredStar");
+				},
+				function(){
+					$(this).closest(".star1").removeClass("hoveredStar");
+					$(this).closest(".star2").removeClass("hoveredStar");
+					$(this).closest(".star3").removeClass("hoveredStar");
+					$(this).removeClass("hoveredStar");
+				}
+			);
+			$(".star5").hover(
+				function() {
+					$(this).closest(".star1").addClass("hoveredStar");
+					$(this).closest(".star2").addClass("hoveredStar");
+					$(this).closest(".star3").addClass("hoveredStar");
+					$(this).closest(".star4").addClass("hoveredStar");
+					$(this).addClass("hoveredStar");
+				},
+				function(){
+					$(this).closest(".star1").removeClass("hoveredStar");
+					$(this).closest(".star2").removeClass("hoveredStar");
+					$(this).closest(".star3").removeClass("hoveredStar");
+					$(this).closest(".star4").removeClass("hoveredStar");
+					$(this).removeClass("hoveredStar");
+				}
+			);
+			
 		});
 	</script>
 	<!-- //Bootstrap Core JavaScript -->
