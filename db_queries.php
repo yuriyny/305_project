@@ -20,7 +20,6 @@
 		$result = db_query($db, $sql); 
 		return $result;
 	}
-	// implement other website functions 
 	function find_associated_movies($actorName){ //find movies belonging to actor
 		global $db; 
 		$firstAndLast = explode(" ", $actorName); 

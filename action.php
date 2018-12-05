@@ -157,33 +157,33 @@
 									<li>
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Action</a></li>
-												<li><a href="genres.html">Biography</a></li>
-												<li><a href="genres.html">Crime</a></li>
-												<li><a href="genres.html">Family</a></li>
-												<li><a href="horror.html">Horror</a></li>
-												<li><a href="genres.html">Romance</a></li>
-												<li><a href="genres.html">Sports</a></li>
-												<li><a href="genres.html">War</a></li>
+												<li><a href="genres.php?genre=Action">Action</a></li>
+												<li><a href="genres.php?genre=Biography">Biography</a></li>
+												<li><a href="genres.php?genre=Crime">Crime</a></li>
+												<li><a href="genres.php?genre=Family">Family</a></li>
+												<li><a href="genres.php?genre=Horror">Horror</a></li>
+												<li><a href="genres.php?genre=Romance">Romance</a></li>
+												<li><a href="genres.php?genre=Sports">Sports</a></li>
+												<li><a href="genres.php?genre=War">War</a></li>
 											</ul>
 										</div>
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Adventure</a></li>
-												<li><a href="comedy.html">Comedy</a></li>
-												<li><a href="genres.html">Documentary</a></li>
-												<li><a href="genres.html">Fantasy</a></li>
-												<li><a href="genres.html">Thriller</a></li>
+												<li><a href="genres.php?genre=Adventure">Adventure</a></li>
+												<li><a href="genres.php?genre=Comedy">Comedy</a></li>
+												<li><a href="genres.php?genre=Documentary">Documentary</a></li>
+												<li><a href="genres.php?genre=Fantasy">Fantasy</a></li>
+												<li><a href="genres.php?genre=Thriller">Thriller</a></li>
 											</ul>
 										</div>
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Animation</a></li>
-												<li><a href="genres.html">Costume</a></li>
-												<li><a href="genres.html">Drama</a></li>
-												<li><a href="genres.html">History</a></li>
-												<li><a href="genres.html">Musical</a></li>
-												<li><a href="genres.html">Psychological</a></li>
+												<li><a href="genres.php?genre=Animation">Animation</a></li>
+												<li><a href="genres.php?genre=Costume">Costume</a></li>
+												<li><a href="genres.php?genre=Drama">Drama</a></li>
+												<li><a href="genres.php?genre=History">History</a></li>
+												<li><a href="genres.php?genre=Musical">Musical</a></li>
+												<li><a href="genres.php?genre=Psychological">Psychological</a></li>
 											</ul>
 										</div>
 										<div class="clearfix"></div>
@@ -191,38 +191,6 @@
 								</ul>
 							</li>
 							<li><a href="top.php">Top Rated</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Country <b class="caret"></b></a>
-								<ul class="dropdown-menu multi-column columns-3">
-									<li>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Asia</a></li>
-												<li><a href="genres.html">France</a></li>
-												<li><a href="genres.html">Taiwan</a></li>
-												<li><a href="genres.html">United States</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">China</a></li>
-												<li><a href="genres.html">HongCong</a></li>
-												<li><a href="genres.html">Japan</a></li>
-												<li><a href="genres.html">Thailand</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Euro</a></li>
-												<li><a href="genres.html">India</a></li>
-												<li><a href="genres.html">Korea</a></li>
-												<li><a href="genres.html">United Kingdom</a></li>
-											</ul>
-										</div>
-										<div class="clearfix"></div>
-									</li>
-								</ul>
-							</li>
 							<li><a href="actors.html">Actors</a></li>
 							<li><a href="rate.php">Rate A Movie</a></li>
 						</ul>
