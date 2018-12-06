@@ -195,7 +195,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</li>
 								</ul>
 							</li>
-							<li><a href="actors.php">Top Rated</a></li>
+							<li><a href="top.php">Top Rated</a></li>
 							<li><a href="actors.php">Actors</a></li>
 							<li><a href="rate.php">Rate A Movie</a></li>
 						</ul>

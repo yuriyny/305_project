@@ -61,7 +61,7 @@
 	<div class="header">
 		<div class="container">
 			<div class="w3layouts_logo">
-				<a href="index.html"><h1>305<span>Movies</span></h1></a>
+				<a href="index.html"><h1>OYO<span>Movies</span></h1></a>
 			</div>
 			<div class="w3_search">
 				<form action="action.php" method="post">
