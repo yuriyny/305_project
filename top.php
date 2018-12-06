@@ -61,7 +61,7 @@
 	<div class="header">
 		<div class="container">
 			<div class="w3layouts_logo">
-				<a href="index.html"><h1>305<span>Movies</span></h1></a>
+				<a href="index.html"><h1>OYO<span>Movies</span></h1></a>
 			</div>
 			<div class="w3_search">
 				<form action="action.php" method="post">
@@ -72,7 +72,6 @@
 			<div class="w3l_sign_in_register">
 				<ul>
 					<li><i class="fa fa-phone" aria-hidden="true"></i> (+000) 123 345 653</li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>

@@ -66,10 +66,10 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<div class="header">
 		<div class="container">
 			<div class="w3layouts_logo">
-				<a href="index.html"><h1>305<span>Movies</span></h1></a>
+				<a href="index.html"><h1>OYO<span>Movies</span></h1></a>
 			</div>
 			<div class="w3_search">
-				<form action="#" method="post">
+				<form action="action.php" method="post">
 					<input type="text" name="Search" placeholder="Search" required="">
 					<input type="submit" value="Go">
 				</form>
@@ -195,7 +195,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</li>
 								</ul>
 							</li>
-							<li><a href="rate.php">Top Rated</a></li>
+							<li><a href="actors.php">Top Rated</a></li>
 							<li><a href="actors.php">Actors</a></li>
 							<li><a href="rate.php">Rate A Movie</a></li>
 						</ul>
@@ -256,7 +256,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 													<span id="SPAN_32"></span><span id="SPAN_33"></span><span id="SPAN_34"></span><span id="SPAN_35"></span><span id="SPAN_36"></span> <a href="/title/tt5491994/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_1" id="A_37"><img src="https://m.media-amazon.com/images/M/MV5BZWYxODViMGYtMGE2ZC00ZGQ3LThhMWUtYTVkNGE3OWU4NWRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_UX45_CR0,0,45,67_AL_.jpg" width="45" height="67" id="IMG_38" alt="" /></a>
 												</td>
 												<td id="TD_39">
-													<a href="movieinfo.html" title="David Attenborough" id="A_40">'.$nresult['movieName'].'</a>
+													<a href="movieinfo.html?name='.$nresult['movieName'].'" title="David Attenborough" id="A_40">'.$nresult['movieName'].'</a>
 												</td>
 												<td id="TD_42">
 													<strong id="STRONG_43">'.$nresult["avg(rating)"].'</strong>
@@ -271,9 +271,35 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 											</tr>
 											';
 										}
+										db_free_result($result); 
+										db_close($db); 
 									}
 									else{
-										
+										$result = rank_all_movies();
+										while($nresult= db_fetch_assoc($result)){
+											echo '
+											<tr id="TR_30">
+												<td id="TD_31">
+													<span id="SPAN_32"></span><span id="SPAN_33"></span><span id="SPAN_34"></span><span id="SPAN_35"></span><span id="SPAN_36"></span> <a href="/title/tt5491994/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_1" id="A_37"><img src="https://m.media-amazon.com/images/M/MV5BZWYxODViMGYtMGE2ZC00ZGQ3LThhMWUtYTVkNGE3OWU4NWRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_UX45_CR0,0,45,67_AL_.jpg" width="45" height="67" id="IMG_38" alt="" /></a>
+												</td>
+												<td id="TD_39">
+													<a href="movieinfo.html?name='.$nresult['movieName'].'" title="David Attenborough" id="A_40">'.$nresult['movieName'].'</a>
+												</td>
+												<td id="TD_42">
+													<strong id="STRONG_43">'.$nresult["avg(rating)"].'</strong>
+												</td>
+
+												<td id="TD_66">
+													<div id="DIV_67">
+														<div id="DIV_68">
+														</div>
+													</div>
+												</td>
+											</tr>
+											';
+										}
+										db_free_result($result); 
+										db_close($db);
 									}
 								
 								?>

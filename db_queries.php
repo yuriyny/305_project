@@ -34,4 +34,12 @@
 		$result = db_query($db, $sql);
 		return $result; 
 	}
+	
+	function find_associated_movies_director($directorName){
+		global $db; 
+		$firstAndLast = explode(" ", $directorName); 
+		$sql = "select moviename, genre, movieyear from directs d where d.firstName='".trim($firstAndLast[0])."' and d.lastName='".trim($firstAndLast[1])."';";
+		$result = db_query($db, $sql); 
+		return $result; 
+	}
 ?>

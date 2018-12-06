@@ -61,7 +61,7 @@
 	<div class="header">
 		<div class="container">
 			<div class="w3layouts_logo">
-				<a href="index.html"><h1>305<span>Movies</span></h1></a>
+				<a href="index.html"><h1>OYO<span>Movies</span></h1></a>
 			</div>
 			<div class="w3_search">
 				<form action="action.php" method="post">
@@ -191,7 +191,7 @@
 								</ul>
 							</li>
 							<li><a href="top.php">Top Rated</a></li>
-							<li><a href="actors.html">Actors</a></li>
+							<li><a href="actors.php">Actors</a></li>
 							<li><a href="rate.php">Rate A Movie</a></li>
 						</ul>
 					</nav>
@@ -200,7 +200,10 @@
 		</div>
 	</div>
 	<!-- //nav -->
-
+	
+	<div class="tittle-head">
+		<h4 class="latest-text"><?php if (isset($_POST['Search'])){echo $_POST['Search'];}?> </h4>
+	</div>
 	<!-- MOVIE LIST -->
 	<div id="DIV_1">
 		<br id="BR_14" />
