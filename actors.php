@@ -1,4 +1,4 @@
-
+<?php require_once("initialize.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,7 +64,7 @@
 				<a href="index.html"><h1>305<span>Movies</span></h1></a>
 			</div>
 			<div class="w3_search">
-				<form action="#" method="post">
+				<form action="action.php" method="post">
 					<input type="text" name="Search" placeholder="Search" required="">
 					<input type="submit" value="Go">
 				</form>
@@ -157,75 +157,42 @@
 									<li>
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Action</a></li>
-												<li><a href="genres.html">Biography</a></li>
-												<li><a href="genres.html">Crime</a></li>
-												<li><a href="genres.html">Family</a></li>
-												<li><a href="horror.html">Horror</a></li>
-												<li><a href="genres.html">Romance</a></li>
-												<li><a href="genres.html">Sports</a></li>
-												<li><a href="genres.html">War</a></li>
+												<li><a href="genres.php?genre=Action">Action</a></li>
+												<li><a href="genres.php?genre=Biography">Biography</a></li>
+												<li><a href="genres.php?genre=Crime">Crime</a></li>
+												<li><a href="genres.php?genre=Family">Family</a></li>
+												<li><a href="genres.php?genre=Horror">Horror</a></li>
+												<li><a href="genres.php?genre=Romance">Romance</a></li>
+												<li><a href="genres.php?genre=Sports">Sports</a></li>
+												<li><a href="genres.php?genre=War">War</a></li>
 											</ul>
 										</div>
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Adventure</a></li>
-												<li><a href="comedy.html">Comedy</a></li>
-												<li><a href="genres.html">Documentary</a></li>
-												<li><a href="genres.html">Fantasy</a></li>
-												<li><a href="genres.html">Thriller</a></li>
+												<li><a href="genres.php?genre=Adventure">Adventure</a></li>
+												<li><a href="genres.php?genre=Comedy">Comedy</a></li>
+												<li><a href="genres.php?genre=Documentary">Documentary</a></li>
+												<li><a href="genres.php?genre=Fantasy">Fantasy</a></li>
+												<li><a href="genres.php?genre=Thriller">Thriller</a></li>
 											</ul>
 										</div>
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Animation</a></li>
-												<li><a href="genres.html">Costume</a></li>
-												<li><a href="genres.html">Drama</a></li>
-												<li><a href="genres.html">History</a></li>
-												<li><a href="genres.html">Musical</a></li>
-												<li><a href="genres.html">Psychological</a></li>
+												<li><a href="genres.php?genre=Animation">Animation</a></li>
+												<li><a href="genres.php?genre=Costume">Costume</a></li>
+												<li><a href="genres.php?genre=Drama">Drama</a></li>
+												<li><a href="genres.php?genre=History">History</a></li>
+												<li><a href="genres.php?genre=Musical">Musical</a></li>
+												<li><a href="genres.php?genre=Psychological">Psychological</a></li>
 											</ul>
 										</div>
 										<div class="clearfix"></div>
 									</li>
 								</ul>
 							</li>
-							<li><a href="series.html">Top Rated</a></li>
-							<li><a href="news.html">Most Recent</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Country <b class="caret"></b></a>
-								<ul class="dropdown-menu multi-column columns-3">
-									<li>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Asia</a></li>
-												<li><a href="genres.html">France</a></li>
-												<li><a href="genres.html">Taiwan</a></li>
-												<li><a href="genres.html">United States</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">China</a></li>
-												<li><a href="genres.html">HongCong</a></li>
-												<li><a href="genres.html">Japan</a></li>
-												<li><a href="genres.html">Thailand</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Euro</a></li>
-												<li><a href="genres.html">India</a></li>
-												<li><a href="genres.html">Korea</a></li>
-												<li><a href="genres.html">United Kingdom</a></li>
-											</ul>
-										</div>
-										<div class="clearfix"></div>
-									</li>
-								</ul>
-							</li>
-							<li><a href="actors.html">Actors</a></li>
-							<li><a href="list.html">A - z list</a></li>
+							<li><a href="top.php">Top Rated</a></li>
+							<li><a href="actors.php">Actors</a></li>
+							<li><a href="rate.php">Rate A Movie</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -255,45 +222,24 @@
 				</tr>
 			</thead>
 			<tbody id="TBODY_29">
-
-				<tr id="TR_30">
-					<td id="TD_31">
-						<span id="SPAN_32"></span><span id="SPAN_33"></span><span id="SPAN_34"></span><span id="SPAN_35"></span><span id="SPAN_36"></span> <a href="/title/tt5491994/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_1" id="A_37"><img src="images/actor3.jpg" width="67" height="67" id="IMG_38" alt='' /></a>
-					</td>
-					<td id="TD_39">
-						 <a href="personinfo.html" title="David Attenborough" id="A_40">Actor Name1</a> <span id="SPAN_41">(2016)</span>
-					</td>
-				</tr>
-
-				<tr id="TR_69">
-					<td id="TD_70">
-						<span id="SPAN_71"></span><span id="SPAN_72"></span><span id="SPAN_73"></span><span id="SPAN_74"></span><span id="SPAN_75"></span> <a href="/title/tt0185906/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_2" id="A_76"><img src="images/actor3.jpg" width="45" height="67" id="IMG_77" alt='' /></a>
-					</td>
-					<td id="TD_78">
-						 <a href="personinfo.html" title="Scott Grimes, Damian Lewis" id="A_79">Actor Name2</a> <span id="SPAN_80">(2001)</span>
-					</td>
-				</tr>
-
-				<tr id="TR_30">
-					<td id="TD_31">
-						<span id="SPAN_32"></span><span id="SPAN_33"></span><span id="SPAN_34"></span><span id="SPAN_35"></span><span id="SPAN_36"></span> <a href="/title/tt5491994/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_1" id="A_37"><img src="images/actor3.jpg" width="67" height="67" id="IMG_38" alt='' /></a>
-					</td>
-					<td id="TD_39">
-						 <a href="personinfo.html" title="David Attenborough" id="A_40">Actor Name3</a> <span id="SPAN_41">(2016)</span>
-					</td>
-				</tr>
-
-				<tr id="TR_69">
-					<td id="TD_70">
-						<span id="SPAN_71"></span><span id="SPAN_72"></span><span id="SPAN_73"></span><span id="SPAN_74"></span><span id="SPAN_75"></span> <a  id="A_76"><img src="images/actor3.jpg" width="45" height="67" id="IMG_77" alt='' /></a>
-					</td>
-					<td id="TD_78">
-						 <a href="personinfo.html" title="Scott Grimes, Damian Lewis" id="A_79">Actor Name4</a> <span id="SPAN_80">(2001)</span>
-					</td>
-				</tr>
-
-
-
+				<?php 
+					$result = find_all_actors();
+					while ($nresult = db_fetch_assoc($result)){
+						echo 
+						'
+							<tr id="TR_30">
+							<td id="TD_31">
+							<span id="SPAN_32"></span><span id="SPAN_33"></span><span id="SPAN_34"></span><span id="SPAN_35"></span><span id="SPAN_36"></span> <a href="/title/tt5491994/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_1" id="A_37"><img src="images/actor3.jpg" width="67" height="67" id="IMG_38" alt="" /></a>
+							</td>
+							<td id="TD_39">
+							 <a href="personinfo.html" title="David Attenborough" id="A_40">'.$nresult["firstName"].' '.$nresult["lastName"].'</a> 
+							</td>
+							</tr>
+						';
+					}
+					db_free_result($result);
+					db_close($db); 
+				?>
 				
 			</tbody>
 		</table>

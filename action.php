@@ -1,4 +1,4 @@
-<?php require_once("C:\Users\omars_000\Documents\Github\305_project\php\initialize.php"); ?>
+<?php require_once("initialize.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -191,7 +191,7 @@
 								</ul>
 							</li>
 							<li><a href="top.php">Top Rated</a></li>
-							<li><a href="actors.php">Actors</a></li>
+							<li><a href="actors.html">Actors</a></li>
 							<li><a href="rate.php">Rate A Movie</a></li>
 						</ul>
 					</nav>
@@ -219,113 +219,59 @@
 					<th id="TH_25">
 						Movie Title
 					</th>
-					<th id="TH_26">
-						Rating
-					</th>
-					<th id="TH_27">
-						Your Rating
-					</th>
+					<?php 
+						if (count(explode(" ",$_POST['Search'])) > 1){
+							echo '<th id="TH_27">
+									Genre
+								</th>';
+						}
+						else{
+							echo '<th id="TH_27">
+									Your Rating
+								</th>';
+						}
+					?>
+					
 					<th id="TH_28">
 					</th>
 				</tr>
 			</thead>
 			
 			<tbody id="TBODY_29">
-
-				<tr id="TR_30">
-					<td id="TD_31">
-						<span id="SPAN_32"></span><span id="SPAN_33"></span><span id="SPAN_34"></span><span id="SPAN_35"></span><span id="SPAN_36"></span> <a href="/title/tt5491994/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_1" id="A_37"><img src="https://m.media-amazon.com/images/M/MV5BZWYxODViMGYtMGE2ZC00ZGQ3LThhMWUtYTVkNGE3OWU4NWRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_UX45_CR0,0,45,67_AL_.jpg" width="45" height="67" id="IMG_38" alt='' /></a>
-					</td>
-					<td id="TD_39">
-						 <a href="movieinfo.html" title="David Attenborough" id="A_40">Planet Earth II</a> <span id="SPAN_41">(2016)</span>
-					</td>
-					<td id="TD_42">
-						<strong id="STRONG_43">9.5</strong>
-					</td>
-
-					<td id="TD_66">
-						<div id="DIV_67">
-							<div id="DIV_68">
-							</div>
-						</div>
-					</td>
-				</tr>
-
-				<tr id="TR_69">
-					<td id="TD_70">
-						<span id="SPAN_71"></span><span id="SPAN_72"></span><span id="SPAN_73"></span><span id="SPAN_74"></span><span id="SPAN_75"></span> <a href="/title/tt0185906/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_2" id="A_76"><img src="https://m.media-amazon.com/images/M/MV5BMTI3ODc2ODc0M15BMl5BanBnXkFtZTYwMjgzNjc3._V1_UX45_CR0,0,45,67_AL_.jpg" width="45" height="67" id="IMG_77" alt='' /></a>
-					</td>
-					<td id="TD_78">
-						 <a href="movieinfo.html" title="Scott Grimes, Damian Lewis" id="A_79">Band of Brothers</a> <span id="SPAN_80">(2001)</span>
-					</td>
-					<td id="TD_81">
-						<strong id="STRONG_82">9.5</strong>
-					</td>
-
-					<td id="TD_105">
-						<div id="DIV_106">
-							<div id="DIV_107">
-							</div>
-						</div>
-					</td>
-				</tr>
-
-				<tr id="TR_30">
-					<td id="TD_31">
-						<span id="SPAN_32"></span><span id="SPAN_33"></span><span id="SPAN_34"></span><span id="SPAN_35"></span><span id="SPAN_36"></span> <a href="/title/tt5491994/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_1" id="A_37"><img src="https://m.media-amazon.com/images/M/MV5BZWYxODViMGYtMGE2ZC00ZGQ3LThhMWUtYTVkNGE3OWU4NWRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_UX45_CR0,0,45,67_AL_.jpg" width="45" height="67" id="IMG_38" alt='' /></a>
-					</td>
-					<td id="TD_39">
-						 <a href="movieinfo.html" title="David Attenborough" id="A_40">Planet Earth II</a> <span id="SPAN_41">(2016)</span>
-					</td>
-					<td id="TD_42">
-						<strong id="STRONG_43">9.5</strong>
-					</td>
-
-					<td id="TD_66">
-						<div id="DIV_67">
-							<div id="DIV_68">
-							</div>
-						</div>
-					</td>
-				</tr>
-
-				<tr id="TR_69">
-					<td id="TD_70">
-						<span id="SPAN_71"></span><span id="SPAN_72"></span><span id="SPAN_73"></span><span id="SPAN_74"></span><span id="SPAN_75"></span> <a href="/title/tt0185906/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_2" id="A_76"><img src="https://m.media-amazon.com/images/M/MV5BMTI3ODc2ODc0M15BMl5BanBnXkFtZTYwMjgzNjc3._V1_UX45_CR0,0,45,67_AL_.jpg" width="45" height="67" id="IMG_77" alt='' /></a>
-					</td>
-					<td id="TD_78">
-						 <a href="movieinfo.html" title="Scott Grimes, Damian Lewis" id="A_79">Band of Brothers</a> <span id="SPAN_80">(2001)</span>
-					</td>
-					<td id="TD_81">
-						<strong id="STRONG_82">9.5</strong>
-					</td>
-
-					<td id="TD_105">
-						<div id="DIV_106">
-							<div id="DIV_107">
-							</div>
-						</div>
-					</td>
-				</tr>
-
-				<tr id="TR_30">
-					<td id="TD_31">
-						<span id="SPAN_32"></span><span id="SPAN_33"></span><span id="SPAN_34"></span><span id="SPAN_35"></span><span id="SPAN_36"></span> <a href="/title/tt5491994/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_1" id="A_37"><img src="https://m.media-amazon.com/images/M/MV5BZWYxODViMGYtMGE2ZC00ZGQ3LThhMWUtYTVkNGE3OWU4NWRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_UX45_CR0,0,45,67_AL_.jpg" width="45" height="67" id="IMG_38" alt='' /></a>
-					</td>
-					<td id="TD_39">
-						 <a href="/title/tt5491994/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_1" title="David Attenborough" id="A_40">Planet Earth II</a> <span id="SPAN_41">(2016)</span>
-					</td>
-					<td id="TD_42">
-						<strong id="STRONG_43">9.5</strong>
-					</td>
-
-					<td id="TD_66">
-						<div id="DIV_67">
-							<div id="DIV_68">
-							</div>
-						</div>
-					</td>
-				</tr>
+				<?php 
+					$result1; 
+					$queries = explode(" ", $_POST['Search']);
+					if (count($queries) > 1){
+						$result1 = find_associated_movies($_POST['Search']);
+						while($query_result = db_fetch_assoc($result1)){
+							echo '<tr id="TR_30">
+								<td id="TD_31">
+									<span id="SPAN_32"></span><span id="SPAN_33"></span><span id="SPAN_34"></span><span id="SPAN_35"></span><span id="SPAN_36"></span> <a href="/title/tt5491994/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_1" id="A_37"><img src="https://m.media-amazon.com/images/M/MV5BZWYxODViMGYtMGE2ZC00ZGQ3LThhMWUtYTVkNGE3OWU4NWRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_UX45_CR0,0,45,67_AL_.jpg" width="45" height="67" id="IMG_38" alt="" />
+								</a></td><td id="TD_39"><a href="movieinfo.html" title="David Attenborough" id="A_40">'.$query_result["movieName"].'</a> <span id="SPAN_41">('.$query_result["movieYear"].')</span></td><td id="TD_42">'.$query_result["movieGenre"].'</td> </tr>';
+						}
+						db_free_result($result1); 
+					}
+					else{
+						$result1 = find_movies_by_genre($queries[0]);
+						while ($query_result = db_fetch_assoc($result1)){
+							echo '
+								<tr id="TR_30">
+								<td id="TD_31">
+									<span id="SPAN_32"></span><span id="SPAN_33"></span><span id="SPAN_34"></span><span id="SPAN_35"></span><span id="SPAN_36"></span> <a href="/title/tt5491994/?pf_rd_m=A2FGELUUNOQJNL&amp;pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&amp;pf_rd_r=PDZ0DG8SQ8B0MRK3H9D1&amp;pf_rd_s=center-1&amp;pf_rd_t=15506&amp;pf_rd_i=toptv&amp;ref_=chttvtp_tt_1" id="A_37"><img src="https://m.media-amazon.com/images/M/MV5BZWYxODViMGYtMGE2ZC00ZGQ3LThhMWUtYTVkNGE3OWU4NWRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_UX45_CR0,0,45,67_AL_.jpg" width="45" height="67" id="IMG_38" alt=""/></a>
+								</td>
+								<td id="TD_39">
+									 <a href="movieinfo.html" title="David Attenborough" id="A_40">'.$query_result["movieName"].'</a> <span id="SPAN_41">(2016)</span>
+								</td>
+								<td id="TD_42">
+									<strong id="STRONG_43">'.$query_result["avg(rating)"].'</strong>
+								</td>
+								</tr>';
+						}
+						db_free_result($result1); 
+					}
+					db_close($db); 
+				?>
+				
 			</tbody>
 		</table>
 	</div>
