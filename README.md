@@ -1,2 +1,2 @@
 # movie-database
-A movie database app written in PHP
+A movie database (MySQL) app written in PHP
